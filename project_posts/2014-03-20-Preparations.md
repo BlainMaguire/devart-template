@@ -5,7 +5,7 @@ I started to gravitate towards the idea of trying to create something intricate 
 Here is an old video:
 https://www.youtube.com/watch?v=88JOPdSF8h4
 
-And here is one of my experients:
+And here is one of my experiments:
 https://www.youtube.com/watch?v=EAMRH5K8YXQ
 
 Although I kept iterating and liked some of the results, I didn't really feel that they were fitting with the theme of pushing the boundries, so I basically went back to the drawing board.
@@ -16,7 +16,7 @@ Painterly rendering looked nice, although the standard approach for doing it has
 
 So I dug up [Whistler](https://github.com/BlainMaguire/whistler "Github") which was just a Python script which did it rather differently.
 
-Any painterly renderers I've come across always use textures (usually along splines for brush strokes) and creates a bunch those in one or more passes.
+Any painterly renderers I've come across always use textures (usually along splines for brush strokes) and create a bunch of those in one or more passes.
 
 Whistler doesn't use textures at all, it uses bezier curved shapes. It is incremental and doesn't follow any particular order so it's not obvious to anyone watching it progress what it will paint next.
 
