@@ -4,7 +4,7 @@ For the moment, I wrote a few lines of code in the main loop to simulate getting
 
 I watched to see if actually picked up changes and how long it took. The short answer is that it really depends on what's happening on the camera and what options you've set.
 
-A lot of people have asked me about the amount of shapes on the screen being laid on top of each other, if it ends up running, will there be a memory leak? Which is a perfectly legitmiate question I guess. However, because I'm just working with what are essentially bitmaps (and painting on them) and also not storing any of the shapes, then there are no issues like that to worry about.
+A lot of people have asked me about the amount of shapes on the screen being laid on top of each other. If it ends up running for a long time, will there be a memory leak? Which is a perfectly legitmiate question I guess. However, because I'm just working with what are essentially bitmaps (and painting on them) and also not storing any of the shapes, then there are no issues like that to worry about.
 
 Here's some pictures I took while I was waiting for it to progress:
 
