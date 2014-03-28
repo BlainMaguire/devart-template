@@ -1,33 +1,36 @@
 # Project Title
-Insert the name of your project
+Artificial Paint Elegance 
 
 ## Authors
-- Insert main author name, surname, github account
-- Insert other author(s) name, surname, github account (one per list element)
+- Blain Maguire, github.com/BlainMaguire
 
 ## Description
-Insert a description containing about 100 to 150 words, including your motivation and the meaning behind your idea and execution. The Judges will be keen to know how your idea pushes the boundaries of code and technology. 
+
+How would an android paint? Would it focus on the same details a human would? This project aims to explore the space of possiblities of the painting process by using software.
+
+A virtual canvas is shown to the viewer. Brushstrokes appear, one by one. Behind the scenes, an artificial painter is painting what it sees through a webcam. As people move around it changes. They can also use their phones or a computer to tell the artificial painter to change it's style.
 
 ## Link to Prototype
-NOTE: If your project lives online you can add one or more links here. Make sure you have a stable version of your project running before linking it.
+Prototype is on my devart github repo under project_code:
 
-[Example Link](http://www.google.com "Example Link")
+[Github](https://github.com/BlainMaguire/devart-template/tree/master/project_code "Github")
 
-## Example Code
-NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
-```
-function test() {
-  console.log("Printing a test");
-}
-```
 ## Links to External Libraries
- NOTE: You can also use this space to link to external libraries or Github repositories you used on your project.
 
-[Example Link](http://www.google.com "Example Link")
+Using [Node.js](https://github.com/joyent/node "Node.js") with [Express.js](https://github.com/visionmedia/express "Express.js")
+
+Python (2.7) with [Python Imaging Library a.k.a. PIL] (http://www.pythonware.com/products/pil/ "Python Imaging Library") and [Pygame](http://pygame.org/download.shtml "Pygame")
 
 ## Images & Videos
-NOTE: For additional images you can either use a relative link to an image on this repo or an absolute link to an externally hosted image.
 
-![Example Image](project_images/cover.jpg?raw=true "Example Image")
+![Pointillist](project_images/cover.jpg?raw=true "Pointillist")
 
-https://www.youtube.com/watch?v=30yGOxJJ2PQ
+![Bezier Strip](project_images/bezierstrip.jpg?raw=true "Bezier Strip")
+
+https://www.youtube.com/watch?v=uvn7pSIMDGg
+
+https://www.youtube.com/watch?v=bCTsSKyliFg
+
+![Screenshot](project_images/demorunning.jpg?raw=true "Screenshot")
+
+

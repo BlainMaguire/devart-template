@@ -1,16 +1,37 @@
 {
     "technologies": {
+        "languages" : [
+            "python",
+            "javascript"
+        ],
         "apis": [
-            "insert apis"
+            ""
         ],
         "platforms": [
-            "insert platforms"
+            "Windows",
+            "Linux",
+            "OSX",
+            "Web"
         ],
         "toolkits": [
-            "insert toolkits"
+            "angularjs",
+            "expressjs",
+            "pygame",
+            "python imaging library"
         ]
     },
     "themes": [
-        "insert themes"
+        "painterly rendering",
+        "painting",
+        "interactive",
+        "animation",
+        "time-lapse",
+        "images",
+        "image processing",
+        "camera",
+        "webcam",
+        "photograph",
+        "impressionist",
+        "colorful"
     ]
 }

@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html ng-app="livePainting">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Live Painting</title>
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/colorpicker.css"/>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+	<script src="js/bootstrap-colorpicker-module.js"></script>
+	<script src="js/form.js"></script>
+
+</head>
+
+<body ng-controller="mainController">
+	<div class="container">
+
+		<div class="text-center">
+			<h3>Live Painting Options</h3>
+		</div>
+
+		<div id="options-list" class="row">
+			<div class="col-sm-4 col-sm-offset-4">
+
+                Select a painting style: <select ng-model="selection" ng-options="o.type for o in options"> <br />
+                </select>
+			</div>
+		</div>
+
+		<div id="options-form" class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<form>
+                        <div class="controls" ng-switch on="selection.type">
+                            <div ng-switch-when="beziers">
+                                Min X:<input type="number" min="1" ng-model="selection.min_x" />Max X:<input type="number" min="1" ng-model="selection.max_x" /><br />
+                                Min Y:<input type="number" min="1" ng-model="selection.min_y" />Max Y:<input type="number" min="1" ng-model="selection.max_y" />
+                            </div>
+                            
+                            <div ng-switch-when="pointillism">
+                                Colors:
+                                <ul>
+                                    <li ng-repeat="color in selection.colors">
+                                        <input colorpicker="rgb" type="text" ng-model="selection.colors[$index]">[<a href ng-click="selection.colors.splice($index, 1)">X</a>]
+                                    </li>
+                                    <li>
+                                        [<a href ng-click="selection.colors.push('rgb(255, 0, 0)')">add</a>]
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                    <br />
+					<button type="submit" class="btn btn-primary btn-lg" ng-click="sendOptions()">Change</button>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
