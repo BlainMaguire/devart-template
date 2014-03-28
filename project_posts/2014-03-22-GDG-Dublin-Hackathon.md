@@ -8,11 +8,11 @@ A large part of the morning was spent evaluating various ways to integrate the P
 
 ### Numpy arrays, Pygame Images and Python Imaging Library Images
 
-So the original Whistler code uses Python Imaging Library image objects but the image from the camera is using the format for Pygame. I needed to bridge that gap between the two. Seems like just converting to Numpy arrays worked first time but it wasn't without a few strange bugs to fix (particularly around width/height and differnt bit depths).
+So the original Whistler code uses Python Imaging Library image objects but the image from the camera is using the format for pygame. I needed to bridge that gap between the two. Seems like just converting to Numpy arrays worked first time but it wasn't without a few strange bugs to fix (particularly around width/height and different bit depths).
 
 ### Early Prototype
 
-So towards the end of the day, I waded through copious amounts of errors until I finally got a live version of Whistler, updating a window istead of an image on the file system. I played around with various values, like changing the rate for passing the new camera image to the library, to see how that affected performance. Lots of tweaking like that.
+So towards the end of the day, I waded through copious amounts of errors until I finally got a live version of Whistler, updating a window instead of an image on the file system. I played around with various values, like changing the rate for passing the new camera image to the library, to see how that affected performance. There was lots of tweaking like that.
 
 Here's a photo of me trying the early prototype, complete with a debug console in the background:
 
