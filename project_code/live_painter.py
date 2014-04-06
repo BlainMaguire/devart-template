@@ -30,6 +30,7 @@ class JsonConfigHandler(SocketServer.BaseRequestHandler):
             draw_target = whistler.draw_and_compare
         elif config['type'] == 'pointillism':
             print 'Changing to Pointillism'
+            pointillism.colors = pointillism.load_colors(config['colors'])
             draw_target = pointillism.draw_and_compare
         self.request.sendall(json.dumps({'return':'ok'}))
 

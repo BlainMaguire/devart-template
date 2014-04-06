@@ -30,6 +30,12 @@ def varyb(color):
     #assert new_color[rc] > -1 and new_color[rc] < 256
     return tuple(new_color)
 
+def load_colors(colors):
+    filtered = []
+    for color in colors:
+        filtered.append(tuple(map(int, color[4:-1].split(','))))
+    return filtered
+
 def draw_and_compare():
     #global save_im, remaining, fail_count, last_saved_count
     global colors
@@ -43,7 +49,6 @@ def draw_and_compare():
     canvasOffset = 0
     rx1 = (rx1 - ((rx1 - canvasOffset) % rim.size[0]));
     ry1 = (ry1 - ((ry1 - canvasOffset) % rim.size[1]));
-        #rim = rim.transpose(Image.FLIP_LEFT_RIGHT)
 
     offset = choice([1,2,3,4,5,6])
     if offset==1:
